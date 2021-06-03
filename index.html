@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>
-            Lukáš Moravec
+            Lukáš Moravec | Software Developer
         </title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400&display=block">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=block">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&display=block">
         <link rel="shortcut icon" href="favicon.ico">
         <style type="text/css">
             body {
@@ -34,9 +35,66 @@
                 margin-top: 6px;
                 color: #222222;
             }
+            
+            .logo {
+              user-select: none;
+              display: flex;
+              align-items: flex-end;
+              line-height: 1;
+              font-size: 24px;
+              font-weight: 400;
+              letter-spacing: -0.05em;
+              color: black;
+              margin-bottom: 40px;
+            }
+
+            .logo .text {
+              display: flex;
+            }
+
+            .logo .text:first-child {
+              font-weight: 700;
+            }
+
+            .logo .symbol {
+              color: #ec1e64;
+              font-weight: 700;
+            }
+
+            .logo .hidden {
+              display: block;
+              overflow: hidden;
+              transition: opacity 0.4s ease-in, max-width 0.4s ease-in;
+              opacity: 1;
+              max-width: 4em;
+            }
+
+            .logo:hover .hidden {
+              opacity: 0;
+              max-width: 0;
+            }
+            
+            aside {
+              user-select: none;
+              position: fixed;
+              bottom: 20px;
+              left: 20px;
+              z-index: -1;
+              font-family: 'Merriweather', serif;
+              font-size: 70px;
+              font-weight: 900;
+              line-height: 1;
+              text-align: left;
+              color: black;
+              opacity: 0.05;
+            }
         </style>
     </head>
     <body>
+        <h1 class="logo">
+            <span class="text">Morki</span>
+            <span class="symbol">.</span>
+        </h1>
         <dl>
             <dt>Name</dt>
             <dd>Lukáš Moravec</dd>
@@ -49,5 +107,8 @@
             <dt>Data Box</dt>
             <dd>2nymdqf</dd>
         </dl>
+        <aside>
+            Software<br>Developer<br>.
+        </aside>
     </body>
 </html>
